@@ -10,40 +10,34 @@
 	<name>Inovout DataStore Cloud Table Service</name>
 
 	<dependencies>
-		<dependency>
-			<groupId>commons-httpclient</groupId>
-			<artifactId>commons-httpclient</artifactId>
-			<version>3.1</version>
-		</dependency>
-
 		<!--CXF -->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-frontend-jaxrs</artifactId>
-			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-transports-http-jetty</artifactId>
-			<version>3.0.1</version>
 		</dependency>
-
-
 		<!--配置CXF中的jsonProvider -->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-rs-extension-providers</artifactId>
-			<version>3.0.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.codehaus.jettison</groupId>
-			<artifactId>jettison</artifactId>
-			<version>1.3.6</version>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.1.1.RELEASE</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.inovout.datastore</groupId>
+			<artifactId>datastore-entity-metadata</artifactId>
+		</dependency>
+
 	</dependencies>
 </project>

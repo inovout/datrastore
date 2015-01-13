@@ -3,17 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.inovout.datastore</groupId>
-		<artifactId>datastore-project</artifactId>
+		<artifactId>datastore-entity-project</artifactId>
 		<version>1.0.0</version>
-
 	</parent>
-	<artifactId>datastore-entity-project</artifactId>
-	<packaging>pom</packaging>
-	<name>Inovout DataStore Entity Project POM</name>
-
-	<modules>
-		<module>fetcher</module>
-		<module>metadata</module>
-		<module>common</module>
-	</modules>
+	<artifactId>datastore-entity-common</artifactId>
+	<name>Inovout DataStore Entity Common</name>
 </project>
