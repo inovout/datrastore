@@ -10,8 +10,12 @@
 	<name>Inovout DataStore Entity Metadata</name>
 	<dependencies>
 		<dependency>
-			<groupId>org.inovout.commons</groupId>
+			<groupId>org.inovout.common</groupId>
 			<artifactId>inovout-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.inovout.datastore</groupId>
+			<artifactId>datastore-entity-common</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.data</groupId>

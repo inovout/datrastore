@@ -15,5 +15,7 @@
 		<module>fetcher</module>
 		<module>metadata</module>
 		<module>common</module>
+		<module>persistence</module>
+		<module>indexer</module>
 	</modules>
 </project>
