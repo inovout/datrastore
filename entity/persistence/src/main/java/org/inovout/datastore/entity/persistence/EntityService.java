@@ -9,9 +9,9 @@ import org.inovout.InovoutException;
 import org.inovout.cache.AccessType;
 import org.inovout.cache.CacheFactory;
 import org.inovout.cache.PathCache;
-import org.inovout.datastore.entity.common.CollectionInfo;
-import org.inovout.datastore.entity.common.DataStoreRegions;
-import org.inovout.datastore.entity.common.EntityPackage;
+import org.inovout.datastore.entity.persistence.CollectionInfo;
+import org.inovout.datastore.entity.persistence.DataStoreRegions;
+import org.inovout.datastore.entity.persistence.EntityPackage;
 import org.inovout.mongodb.MongoDbClient;
 import org.inovout.mongodb.MongoDbClientFactory;
 
@@ -26,7 +26,7 @@ public class EntityService {
 	private MongoDbClient mongodbClient;
 	private static final PathCache pathCache = CacheFactory.builderPathCache()
 			.setRootPath(DataStoreRegions.DATASTORE_CAHCE_REGION_ROOT_PATH)
-			.setRegionName(DataStoreRegions.PERSISTENCE)
+			.setRegionName(DataStoreRegions.DOCUMENT)
 			.setAccessType(AccessType.READ_ONLY).build();
 
 	public EntityService() {

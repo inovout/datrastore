@@ -14,7 +14,7 @@
 			<groupId>org.inovout.common</groupId>
 			<artifactId>inovout-common</artifactId>
 		</dependency>
-				<dependency>
+		<dependency>
 			<groupId>org.inovout.datastore</groupId>
 			<artifactId>datastore-entity-metadata</artifactId>
 		</dependency>

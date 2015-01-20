@@ -8,11 +8,11 @@ import org.inovout.InovoutException;
 import org.inovout.cache.AccessType;
 import org.inovout.cache.CacheFactory;
 import org.inovout.cache.PathCache;
-import org.inovout.datastore.entity.common.CollectionInfo;
-import org.inovout.datastore.entity.common.DataStoreRegions;
 import org.inovout.datastore.entity.metadata.model.Bag;
 import org.inovout.datastore.entity.metadata.model.Element;
 import org.inovout.datastore.entity.metadata.repository.BagRepository;
+import org.inovout.datastore.entity.persistence.CollectionInfo;
+import org.inovout.datastore.entity.persistence.DataStoreRegions;
 import org.inovout.lock.InterProcessMutex;
 import org.inovout.util.Contracts;
 import org.inovout.util.StringUtils;
@@ -28,7 +28,7 @@ public class BagService {
 
 	private static final PathCache pathCache = CacheFactory.builderPathCache()
 			.setRootPath(DataStoreRegions.DATASTORE_CAHCE_REGION_ROOT_PATH)
-			.setRegionName(DataStoreRegions.PERSISTENCE)
+			.setRegionName(DataStoreRegions.DOCUMENT)
 			.setAccessType(AccessType.WRITE_ONLY).build();
 
 	public Bag createCollection(Bag collection) {

@@ -33,7 +33,10 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.inovout.common</groupId>
+			<artifactId>inovout-common</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.inovout.datastore</groupId>
 			<artifactId>datastore-entity-metadata</artifactId>

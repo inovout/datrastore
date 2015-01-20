@@ -3,6 +3,7 @@ package org.inovout.datastore.cloud.services.table.model;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.inovout.datastore.entity.indices.PropertyInfo;
 import org.inovout.datastore.entity.metadata.model.Bag;
 import org.inovout.datastore.entity.metadata.model.Element;
 import org.inovout.util.TypeConverter;
@@ -28,6 +29,16 @@ public class TableInfo {
 
 	public void setColumns(Set<ColumnInfo> columns) {
 		this.columns = columns;
+	}
+
+	private Set<PropertyInfo> properties = new HashSet<PropertyInfo>();
+
+	public Set<PropertyInfo> getProperties() {
+		return this.properties;
+	}
+
+	public void setProperties(Set<PropertyInfo> properties) {
+		this.properties = properties;
 	}
 
 	private static final ModelMapper MAPPER = new ModelMapper();
@@ -75,16 +86,15 @@ public class TableInfo {
 		 * property : source) { columns.add(MAPPER.map(property,
 		 * ColumnInfo.class)); } return columns; } });
 		 */
-/*		MAPPER.addConverter(new AbstractConverter<Set<ColumnInfo>, Set<Property>>() {
-			@Override
-			protected Set<Property> convert(Set<ColumnInfo> source) {
-				Set<Property> properties = new HashSet<Property>();
-				for (ColumnInfo column : source) {
-					properties.add(MAPPER.map(column, Property.class));
-				}
-				return properties;
-			}
-		});*/
+		/*
+		 * MAPPER.addConverter(new AbstractConverter<Set<ColumnInfo>,
+		 * Set<Property>>() {
+		 * 
+		 * @Override protected Set<Property> convert(Set<ColumnInfo> source) {
+		 * Set<Property> properties = new HashSet<Property>(); for (ColumnInfo
+		 * column : source) { properties.add(MAPPER.map(column,
+		 * Property.class)); } return properties; } });
+		 */
 	}
 
 	public Bag toCollection() {
