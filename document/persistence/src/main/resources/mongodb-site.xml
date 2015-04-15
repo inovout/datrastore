@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+ <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+ <configuration>
+  <property>
+   <name>mongodb.server.address</name>
+   <value>172.10.1.120:27017,172.10.1.123:27017,172.10.1.126:27017</value>
+ </property>
+</configuration> 
